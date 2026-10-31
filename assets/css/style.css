@@ -1,0 +1,589 @@
+/* Reset Css co ban nhat*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+
+ */
+/*
+1.Vi tri
+2.Kich thuoc
+3.Mau sac
+4. Kieu dang(kieu chu , hinh tron, vuong, elip,etc)
+*/
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+#main {
+    overflow: hidden;
+}
+
+#header {
+    height: 46px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*right: 0;*/
+    z-index: 1;
+    /* overflow: hidden; */
+
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+
+    position: relative;
+
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    display: block;
+
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#nav .subnav a {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+
+}
+#header .mobile-menu-btn:hover,
+#header .search-btn:hover {
+    color: #fff;
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+   color: black;
+}
+#header .menu-icon,
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#slider {
+    min-height: 500px;
+    /*background-color: #ccc;*/
+    margin-top: 46px;
+    /*Kich thuoc bang %0% chieu ngang cua chinh no padding-top */
+    padding-top: 50%;
+    background: url(https://www.w3schools.com/w3images/la.jpg) top center / cover no-repeat;
+    position: relative;
+
+
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #ffffff;
+    /*transform: translateX(-50%);*/
+    /*left: 50%;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 20;
+    font-size: 20px;
+    margin-bottom: 25px;
+
+}
+
+#slider .text-description {
+
+}
+
+#content {
+    background-color: #fff;
+}
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2px;
+}
+
+.contact-section .content-section {
+    max-width: 800px;
+    padding: 64px 0 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+
+
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    margin: 25px 0 0 0;
+    font-style: italic;
+    color: #cccccc;
+
+
+}
+
+#content .about-text {
+    margin: 15px 0 0 0;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 0 8px;
+}
+
+#content .members-list {
+    margin-top: 48px;
+    overflow: hidden;
+
+
+}
+
+
+#content .member-name {
+    font-size: 15px;
+
+
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+/* Tour section */
+.tour-section {
+    background-color: #000;
+
+}
+
+.ticket-list {
+    margin-top: 40px;
+
+}
+
+.ticket-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    list-style-type: none;
+
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+.ticket-list .sold-out {
+    background-color: #f44336;
+    color: #ffffff;
+    padding: 3px 4px;
+    margin-left: 16px;
+
+}
+
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    TEXT-ALIGN: CENTER;
+    LINE-HEIGHT: 24PX;
+    margin-top: -3px;
+}
+
+/*End tour section*/
+
+/*Begin place-section*/
+.places-list {
+    margin-top: 32px;
+    margin-bottom: 48px;
+
+    padding-bottom: 50px;
+}
+
+
+.place-img {
+    width: 100%;
+    display: block;
+
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 16px;
+    background-color: black;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.place-buy-btn:hover {
+    color: #757575;
+    background-color: #cccccc;
+
+}
+
+
+/*End place-section*/
+
+
+.modal {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /*display: flex;*/
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal.open {
+    display: flex;
+}
+
+header.modal-header {
+    background: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+.modal .modal-container {
+    background: white;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 33px) !important;
+    animation: modalFadeIn ease .4s;
+
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+label.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+input.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+#buy-tickets {
+    background: #009688;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 18px;
+    text-transform: UPPERCASE;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#buy-tickets:hover {
+    opacity: 0.8;
+}
+
+.close-tickets {
+    border: none;
+    background: #f44336;
+    color: white;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    vertical-align: middle;
+    width: 84px;
+    height: 39px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.modal-footer {
+    padding: 16px;
+    /*text-align: right;*/
+
+}
+
+.modal-help {
+    float: right;
+    display: block;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+}
+
+.modal-footer a {
+    color: #2196f3;
+    text-decoration: underline;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact form*/
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-form .form-submit-btn {
+    color: #fff;
+    background-color: black;
+    padding: 10px 16px;
+    border: none;
+    float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+    color: #000;
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+/*End contact*/
+.map-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 23px;
+    padding: 12px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+#footer .copyright{
+    margin-top: 15px;
+}
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+/*Mobile */
+
+
+
+
